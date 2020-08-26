@@ -1,0 +1,13 @@
+﻿<Window x:Class="ParkerC3SerialComms.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParkerSerialComms"
+        mc:Ignorable="d"
+        Title="Parker Comms" Height="264.252" Width="449.358" >
+    <Grid>
+        <Button Content="SetCommPort" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="169,67,0,0" Click="okClick" Height="30" FontWeight="Bold"/>
+        <Button Content="UserInterface" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="169,114,0,0" Click="openUI" Height="30" FontWeight="Bold"/>
+    </Grid>
+</Window>

@@ -1,0 +1,46 @@
+﻿<Window x:Class="ParkerC3SerialComms.UserInterfacer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParkerSerialComms"
+        mc:Ignorable="d"
+        Title="UserInterface" Height="450" Width="600" Background="Beige"
+		WindowStyle="None" ResizeMode="NoResize" Loaded="onload">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Height="21" Margin="0,10,0,0" TextWrapping="Wrap" Text="User Interface" VerticalAlignment="Top" Width="274" TextAlignment="Center" FontSize="14" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="White" Background="Black"/>
+        <!--Button Content="StartMonitor" HorizontalAlignment="Center" VerticalAlignment="Top" Width="89" Margin="10,6,501,0" Click="StartMonitor" Height="27" FontWeight="Bold"/>
+        <Button Content="StopMonitor" HorizontalAlignment="Center" VerticalAlignment="Top" Width="89" Margin="501,6,10,0" Click="StopMonitor" Height="27" FontWeight="Bold"/-->
+
+        <Label Content="Distance" HorizontalAlignment="Left" Margin="92,36,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtDistance" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="42" Margin="238,36,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" FontSize="24" />
+        <Button Content="Set Distance" HorizontalAlignment="Center" VerticalAlignment="Top" Width="131" Margin="380,36,89,0" Click="DistanceSend" Height="42" FontWeight="Bold"/>
+
+        <Label Content="Velocity" HorizontalAlignment="Left" Margin="92,83,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtVel" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="42" Margin="238,83,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" FontSize="24" />
+        <Button Content="Set Velocity" HorizontalAlignment="Center" VerticalAlignment="Top" Width="131" Margin="380,83,89,0" Click="VelocitySend" Height="42" FontWeight="Bold"/>
+
+        <Label Content="Acceleration" HorizontalAlignment="Left" Margin="92,130,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtAccel" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="42" Margin="238,130,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" FontSize="24" />
+        <Button Content="Set Acceleration" HorizontalAlignment="Center" VerticalAlignment="Top" Width="131" Margin="380,130,89,0" Click="AccelerationSend" Height="42" FontWeight="Bold"/>
+
+        <GroupBox Header="Current Distance" HorizontalAlignment="Left" Height="55" Margin="10,177,0,0" VerticalAlignment="Top" Width="189">
+            <Label x:Name="txtPosStatus" Height="34" Width="120" FontSize="18" />
+        </GroupBox>
+
+        <GroupBox Header="Current Velocity" HorizontalAlignment="Left" Height="55" Margin="207,177,0,0" VerticalAlignment="Top" Width="189">
+            <Label x:Name="txtVelStatus" Height="34" Width="120" FontSize="18" />
+        </GroupBox>
+
+        <GroupBox Header="Current Acceleration" HorizontalAlignment="Left" Height="55" Margin="401,177,0,0" VerticalAlignment="Top" Width="189">
+            <Label x:Name="txtAccStatus" Height="34" Width="106" FontSize="18" />
+        </GroupBox>
+
+
+
+        <TextBox x:Name="rsBox" HorizontalAlignment="Left" Height="168" Margin="10,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="580" VerticalScrollBarVisibility="Auto"/>
+
+        <Button Content="Close" HorizontalAlignment="Center" VerticalAlignment="Top" Width="95" Margin="495,410,10,0" Click="closeWindow" Height="30" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
